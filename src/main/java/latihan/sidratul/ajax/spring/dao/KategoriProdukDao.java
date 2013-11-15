@@ -1,13 +1,14 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package latihan.sidratul.ajax.spring.dao;
 
-/**
- *
- * @author sidratul
- */
-public class KategoriProdukDao {
+import java.util.List;
+import latihan.sidratul.ajax.spring.model.KategoriProduk;
+
+public interface KategoriProdukDao {
+    public List<KategoriProduk> getAllKategori();
     
+    public void saveKategori(KategoriProdukDao kpd);
+    
+    public KategoriProduk getKategoriProdukById(Integer idKategori);
+    
+    public void deleteKategori(Integer id);
 }
