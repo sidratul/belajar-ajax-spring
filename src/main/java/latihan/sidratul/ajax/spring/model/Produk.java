@@ -4,19 +4,19 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class Produk {
-    private Integer id;
+    private Integer idProduk;
     private String produkId;
     private String namaProduk;
     private BigDecimal harga;
     private Date tglUpdate;
     private KategoriProduk kategoriProduk;
 
-    public Integer getId() {
-        return id;
+    public Integer getIdProduk() {
+        return idProduk;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setIdProduk(Integer idProduk) {
+        this.idProduk = idProduk;
     }
 
     public String getProdukId() {
