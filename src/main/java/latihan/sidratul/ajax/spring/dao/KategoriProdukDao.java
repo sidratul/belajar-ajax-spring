@@ -6,7 +6,7 @@ import latihan.sidratul.ajax.spring.model.KategoriProduk;
 public interface KategoriProdukDao {
     public List<KategoriProduk> getAllKategori();
     
-    public void saveKategori(KategoriProdukDao kpd);
+    public void saveKategori(KategoriProduk kategoriProduk);
     
     public KategoriProduk getKategoriProdukById(Integer idKategori);
     

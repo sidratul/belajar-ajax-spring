@@ -59,11 +59,16 @@ public class KategoriProdukDaoImpl implements KategoriProdukDao{
     }
 
     public KategoriProduk getKategoriProdukById(Integer idKategori) {
-        //if()
+        if(idKategori==null){
+            return null;
+        }else{
+            KategoriProduk kategoriProduk= jdbcTemplate.queryForObject(SQL_GET_KATEGORIPRODUK_BYID, new KategoriProdukParameterizedRowMapper(), idKategori);
+            return kategoriProduk;
+        }
     }
 
     public void deleteKategori(Integer id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_DELETE_KATEGORIPRODUK_BYID,id);
     }
     
 }
