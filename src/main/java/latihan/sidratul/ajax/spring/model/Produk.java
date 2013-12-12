@@ -10,6 +10,15 @@ public class Produk {
     private BigDecimal harga;
     private Date tglUpdate;
     private KategoriProduk kategoriProduk;
+    private String gambar;
+
+    public String getGambar() {
+        return gambar;
+    }
+
+    public void setGambar(String gambar) {
+        this.gambar = gambar;
+    }
 
     public Integer getIdProduk() {
         return idProduk;
